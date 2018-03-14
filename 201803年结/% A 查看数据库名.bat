@@ -1,4 +1,14 @@
 @echo off
+rem 判断文件是否存在
+if exist "D:\成都海翔软件有限公司\海翔药业版\HdSvr.exe" (
+rem 检测通过，继续执行
+) else (
+echo 海翔安装目录不是 D:\成都海翔软件有限公司\海翔药业版
+echo 本脚本不适用，手动来吧 -_-b
+pause >nul
+exit
+)
+
 ::ECHO 检查本机是否为服务器
 :YES
 tasklist |findstr /i "HdSvr.exe"
@@ -47,7 +57,7 @@ echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-echo                   本机不是服务器
+echo         本机不是服务器，或海翔服务器没启动
 echo                 需要在服务器上运行
 echo                 指插有加密狗的电脑
 echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
