@@ -1,10 +1,10 @@
 @echo off
-rem 判断文件是否存在
+rem 判断安装目录是否正确
 if exist "D:\成都海翔软件有限公司\海翔药业版\HdSvr.exe" (
 rem 检测通过，继续执行
 ) else (
 echo 海翔安装目录不是 D:\成都海翔软件有限公司\海翔药业版
-echo 本脚本不适用，手动来吧 -_-b
+echo 本脚本不适用，自己手动来吧 -_-b
 pause >nul
 exit
 )
@@ -65,6 +65,6 @@ echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-pause
+pause >nul
 goto YES
 
