@@ -34,7 +34,7 @@ osql -S 127.0.0.1 -d master -U sa -P Hx789789 -i D:\TempFolderZGX\New_AutoBak_nj
 echo 加载mdf，和插入hdaccount
 osql -S 127.0.0.1 -d master -U sa -P Hx789789 -i D:\TempFolderZGX\New_RestoreMDF.sql
 
-echo 还原刚刚备份的数据到2018nj
+echo 还原刚刚备份的数据到xztxzt_2018nj
 osql -S 127.0.0.1 -d master -U sa -P Hx789789 -i D:\TempFolderZGX\New_RecoverData.sql
 
 ECHO 将刚刚的备份打压缩包并删除
