@@ -36,9 +36,6 @@ copy /y *.sql D:\TempFolderZGX\
 copy /y WinRAR.exe D:\TempFolderZGX\
 copy /y *.rar D:\TempFolderZGX\
 
-ECHO 解压模式,e不包含文件夹，-o+覆盖，-o-跳过
-D:\TempFolderZGX\WinRAR.exe e -o+ D:\TempFolderZGX\2018nj.rar D:\TempFolderZGX\
-
 ECHO 调用脚本导出海翔数据库名称
 ::-U 数据库登陆名，-P 密码，在下面修改
 osql -S 127.0.0.1 -d Master -U sa -P Hx789789 -i D:\TempFolderZGX\AutoEXC_name.sql

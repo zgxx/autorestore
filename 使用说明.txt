@@ -24,8 +24,9 @@ AutoEXC_name.sql
 操作完成
 
 btw：
-如果想改自定义数据库名，则替换下面3个sql中2018nj为自定义名
-"AutoBak_nj.sql"，"RestoreMDF.sql"和"RecoverData.sql"的
+如果想改自定义数据库名，则替换下面几个sql中2018nj为自定义名
+"AutoBak_nj.sql"和"RecoverData.sql"的
 2018nj为2019nj即可，则新插入的数据库名则为hmydf_2019nj
-自动添加的帐套名在RestoreMDF.sql中，替换"20180315年结"为自己的名称即可，
+
+自动添加的帐套名在RecoverData.sql中，替换"20180315年结"为自己的名称即可，
 替换时脚本中的qwer都不能动，此为被批处理自动检测替换的符号
