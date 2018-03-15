@@ -28,4 +28,4 @@ move 'HdProject_Med_Data' to 'D:\成都海翔软件有限公司\海翔药业版\Data\qwer_2018n
 move 'HdProject_Med_Log' to 'D:\成都海翔软件有限公司\海翔药业版\Data\qwer_2018nj_log.ldf'
 
 
-INSERT INTO master..HdAccount (accountname,accountdb,tag) VALUES('20180315年结_qwer','qwer_2018nj',10)
+INSERT INTO master..HdAccount (accountname,accountdb,tag) VALUES('20180316年结_qwer','qwer_2018nj',10)
