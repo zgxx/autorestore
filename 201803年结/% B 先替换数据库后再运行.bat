@@ -26,10 +26,10 @@ del /f /s /q New_*.sql
 del /f /s /q D:\成都海翔软件有限公司\海翔药业版\Backup\xztxzt_2018nj.bak
 
 echo 备份特定数据库
-osql -S 127.0.0.1 -d master -U sa -P Hx789789 -i D:\TempFolderZGX\New_AutoBak_nj.sql
+osql -S 127.0.0.1 -d master -U sa -P xxxx -i D:\TempFolderZGX\New_AutoBak_nj.sql
 
 echo 还原刚刚备份的数据到xztxzt_2018nj，和插入hdaccount
-osql -S 127.0.0.1 -d master -U sa -P Hx789789 -i D:\TempFolderZGX\New_RecoverData.sql
+osql -S 127.0.0.1 -d master -U sa -P xxxx -i D:\TempFolderZGX\New_RecoverData.sql
 
 ECHO 将刚刚的备份打压缩包并删除
 :: 开始调用winrar压缩备份减小90%体积,-tn10m代表压缩10分钟内的数据,-r 包含子文件夹，-m1快速模式，-m5高压模式，-df压缩后删除

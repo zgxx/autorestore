@@ -9,7 +9,7 @@ pause >nul
 
 
 echo 开始收缩当前数据库
-osql -S 127.0.0.1 -d master -U sa -P Hx789789 -i D:\TempFolderZGX\New_ShrinkDatabase.sql
+osql -S 127.0.0.1 -d master -U sa -P xxxx -i D:\TempFolderZGX\New_ShrinkDatabase.sql
 
 
 rd /s /q "D:\TempFolderZGX"
