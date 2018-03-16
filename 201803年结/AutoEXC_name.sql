@@ -16,4 +16,4 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 --导出海翔帐套名称,在-P后修改sa密码
-EXEC master..xp_cmdshell 'bcp "SELECT accountname,accountdb FROM master..HdAccount" queryout "D:\成都海翔软件有限公司\海翔数据库名.txt" -c -q -S"." -U"sa" -P"xxxx"'
+EXEC master..xp_cmdshell 'bcp "SELECT accountname,accountdb FROM master..HdAccount" queryout "D:\成都海翔软件有限公司\海翔数据库名.txt" -c -q -S"." -U"sa" -P"Hx789789"'
