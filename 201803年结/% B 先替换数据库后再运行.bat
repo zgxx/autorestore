@@ -29,6 +29,9 @@ del /f /s /q D:\成都海翔软件有限公司\海翔药业版\Backup\xztxzt_2018nj.bak
 echo 备份特定数据库
 osql -S 127.0.0.1 -d master -U sa -P Hx789789 -i D:\TempFolderZGX\New_AutoBak_nj.sql
 
+echo 执行年结前脚本，年结后自动清除gsp单据
+osql -S 127.0.0.1 -d xztxzt -U sa -P Hx789789 -i D:\TempFolderZGX\sys_CutData.sql
+
 echo 还原刚刚备份的数据到xztxzt_2018nj，和插入hdaccount
 osql -S 127.0.0.1 -d master -U sa -P Hx789789 -i D:\TempFolderZGX\New_RecoverData.sql
 
